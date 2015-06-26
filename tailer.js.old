@@ -1,9 +1,0 @@
-var filename = process.argv[2];
-var fs = require('fs');
-if (!filename){
-    console.error("Usage: node watcher.js filename");
-    process.exit(1);
-}
-
-var tail = require('child_process').spawn("tail",["-f", filename]);
-tail.stdout.pipe(process.stdout);
