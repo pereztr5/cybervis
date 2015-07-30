@@ -2,39 +2,40 @@
 <html>
 <head>
     <title>Cyber Vis</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <style>
-        pre {
-            background-color: #eee;
-            height: 500px;
-            width: 1000px;
-            word-wrap: break-word;
-            overflow: auto;
-        }
+    pre {
+        background-color: #eee;
+        height: 500px;
+        width: 1000px;
+        word-wrap: break-word;
+        overflow: auto;
+    }
     #title {
-	width: 100%;
-	float: left;
-	margin: 0 0 0 0;
-	padding: 0;
-	list-style: none;
+        width: 100%;
+        float: left;
+        margin: 0 0 0 0;
+        padding: 0;
+        list-style: none;
     }
     #title li {
-	float: left;
+        float: left;
     }
     #time {
-	width: 150px;
-	margin-left: 30px;
+        width: 150px;
+        margin-left: 30px;
     }
     #sip {
-	width: 130px;
+        width: 130px;
     }
     #sport {
-	width: 90px;
+        width: 90px;
     }
     #dip {
-	width: 105px;
+        width: 105px;
     }
     #dport {
-	width: 150px;
+        width: 150px;
     }
     </style>
     <script src="http://10.103.69.112/socket.io/socket.io.js"></script>
@@ -52,7 +53,6 @@
 <script>
     var socket = io.connect('http://10.103.69.112');
     socket.on('news', function (data) {
-
         $('#log').append(data.data);
         //scroll the div to follow last line added!
         var objDiv = document.getElementById("log");
