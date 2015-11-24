@@ -14,6 +14,10 @@ what is going on during these cyber defense competitions.
 
 This is currently being tested on a CentOS 6.6 box.
 
+### Setup
+- [Argus Setup](http://web.cs.sunyit.edu/~pereztr/argus_setup.html)  
+- [Demo](http://pereztr5.github.io/network-visualization-project-log-2)
+
 ### About
 There are two parts to this project: the server-side and the front-end.
 This repo is being used to present the server-side code with some front-end
